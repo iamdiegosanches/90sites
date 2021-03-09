@@ -1,0 +1,89 @@
+body{
+    color: white;
+    background-color: black;
+    padding: 10px 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    text-align: center;
+}
+hr{
+    display: block; height: 1px;
+    border: 0; border-top: 2px solid #8e4fd6;
+    margin: 1em 0; padding: 0;
+}
+
+/* ---------- list ----------- */
+.numberlist{
+	width:450px;
+
+}
+.numberlist ol{
+    counter-reset: li;
+    list-style: none;
+    *list-style: decimal;
+    font: 15px 'trebuchet MS', 'lucida sans';
+    margin-bottom: 4em;
+
+}
+.numberlist ol ol{
+    margin: 0 0 0 2em;
+}
+			
+.numberlist a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: #444;
+    color: #FFF;
+    text-decoration: none;
+    -moz-border-radius: .3em;
+    -webkit-border-radius: .3em;
+    border-radius: .3em;
+}
+
+.numberlist a:hover{
+    background: #2c2c2c;
+    color: #8e4fd6;
+    text-decoration: none;
+}
+.numberlist a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;	
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #8e4fd6;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    border-radius: 2em;
+    color:#FFF;
+}
+
+footer{
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+    clear: both;
+    position: relative;
+}
+
+footer img {
+    height: 50px;
+}
+
+footer img:hover{
+    filter: invert(100%);
+}
