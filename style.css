@@ -23,8 +23,6 @@ hr{
     list-style: none;
     *list-style: decimal;
     font: 15px 'trebuchet MS', 'lucida sans';
-    margin-bottom: 4em;
-
 }
 .numberlist ol ol{
     margin: 0 0 0 2em;
@@ -34,8 +32,7 @@ hr{
     position: relative;
     display: block;
     padding: .4em .4em .4em 2em;
-    *padding: .4em;
-    margin: .5em 0;
+    margin: 0.8em 0;
     background: #444;
     color: #FFF;
     text-decoration: none;
@@ -69,6 +66,8 @@ hr{
     color:#FFF;
 }
 
+/* -------- footer -------- */
+
 footer{
     background-color: #444;
     color: white;
@@ -86,4 +85,13 @@ footer img {
 
 footer img:hover{
     filter: invert(100%);
+}
+
+
+/* -------------- responsive -------------- */
+
+@media screen and (max-width: 517px) {
+    .numberlist ol {
+        padding-left: 10px;
+    }
 }

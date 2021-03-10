@@ -8,6 +8,11 @@ html, body {
     background-color: #4d6879;
 }
 
+p {
+    color: aliceblue;
+    margin-left: 50px;
+}
+
 .wrapper {
     display: flex;
     height: auto;
