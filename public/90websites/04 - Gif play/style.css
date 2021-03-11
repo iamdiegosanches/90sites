@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    padding: 6% 5% 10% 18%;
+    background-color: #4d6879;
+}
+
+p {
+    color: aliceblue;
+    margin-left: 50px;
+}
+
+.wrapper {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    position: relative; 
+    width: 480px; 
+    height: 300px
+}
+
+#img-hover {
+    position: relative;
+    display: inline-block;
+    width:100%; 
+    height: 100%;
+    z-index: 1;
+}
+  
+#gif-hover {
+    position: relative;
+    display: inline-block;
+    position: absolute;
+    width:100%; 
+    height: 100%; 
+}
+
+.hover {
+    z-index: 2;
+}
+
+
