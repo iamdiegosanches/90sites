@@ -4,6 +4,12 @@ body{
     padding: 10px 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+a::selection,h2::selection,h1::selection,p::selection,strong::selection{
+    background-color: #8e4fd6;
+    color: #fff;
+}
+
 h1{
     text-align: center;
 }
