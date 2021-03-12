@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Muli', sans-serif;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+
+    transition: background 0.5s linear, color 0.5s linear;
+}
+
+body.dark{
+    background-color: rgb(36, 36, 36);
+    color: aliceblue;
+}
+
+.checkbox{
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  } 
+
+
