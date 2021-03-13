@@ -1,3 +1,12 @@
+let nick = prompt('Adicione seu nome');
+
+if (nick === '') {
+    let name = document.getElementById('nick').innerHTML = "Jogador";
+} else {
+    let name = document.getElementById('nick').innerHTML = nick;
+}
+
+
 const game = () => {
     let pScore = 0;
     let cScore = 0;
