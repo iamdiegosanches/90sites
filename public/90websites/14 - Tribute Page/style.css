@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+}
+
+/**/
+
+h1{
+    color: #492b03;
+}
+
+#section-init {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+	margin-top: -25px;
+	padding: 5%;
+	min-height: auto;
+	background: #faefdb;
+}
+
+.title {
+    padding: 5%;
+    text-align: left;
+}
+
+.title h1 {
+    color: #492b03;
+    font-size: 7rem;
+	text-transform: uppercase;
+	margin-top: 0;
+    margin-bottom: 0;
+    line-height: 95%;
+}
+
+/*----------image-------------*/
+
+#img-div {
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    flex: 0 1 auto;
+}
+
+#img-div img{
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+    height: auto;
+    width: 70%;
+    
+    border-radius: 50%;
+    box-shadow: 10px 5px 5px rgb(117, 103, 75);
+}
+
+figcaption {
+    margin-top: 3%;
+    font-size: 1.23rem;
+}
+
+/*----------Content-------------*/
+
+#tribute-info{
+    text-align: center;
+    padding: 3% 20% 5% 20%;
+}
+
+#tribute-info p{
+    text-align: justify;
+}
+
+/*----- hr -----*/
+
+/* url: https://css-tricks.com/examples/hrs/  */
+
+hr {
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+    width: 70%;
+}
+
+hr:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+/*----- hr -----*/
+
+#know-more {
+    background: #faefdb;
+    padding: 3% 20% 5% 20%;
+}
+
+#know-more p{
+    padding: 0% 0% 2% 0%;
+}
+
+#tribute-link {
+    background-color: #492b03;
+    border: solid 2px #492b03;
+    padding: 0.7em 2em;
+    border-radius: 2em;
+    color: white;
+    text-decoration: none;
+}
+
+#tribute-link:hover {
+    background-color: #faefdb;
+    color: #492b03;
+}
+
+footer{
+    display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 1.2em;
+	color: #1D0C0C;
+}
+
+/*-------- responsivity -------- */
+
+@media (max-width: 930px) {
+    #section-init{
+        display: block;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .title h1 {
+        font-size: 5rem;
+    }
+
+    .title p {
+        font-size: smaller;
+    }
+
+    #img-div img {
+		width: 50%;
+    }
+
+    #tribute-info p{
+        text-align: center;
+    }
+}
